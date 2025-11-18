@@ -5,4 +5,4 @@ Technzo is a agency website. It's fully responsive.
 3. Javascript (vanilla)
 4. Jquery
 5. Bootstrap
-6. MixItUp plugin
+6. MixItUp plugin  
