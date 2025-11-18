@@ -1,4 +1,3 @@
-
 Technzo is a agency website. It's fully responsive. 
 # Technology used : 
 1. HTML 5
@@ -7,4 +6,3 @@ Technzo is a agency website. It's fully responsive.
 4. Jquery
 5. Bootstrap
 6. MixItUp plugin
-
