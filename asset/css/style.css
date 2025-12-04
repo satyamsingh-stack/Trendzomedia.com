@@ -821,12 +821,12 @@ button.project-button-2 {
 }
 
 .team-card ul li a {
-  color: #e1e1e1;
+  color: #a4a8ad;
   font-size: 16px;
 }
 
 .team-card ul li a:hover {
-  color: orange;
+  color: #2563EB;
   transition: all 0.5s;
 }
 
@@ -839,6 +839,6 @@ span.counter {
 span.counter-plus {
   font-family: "Roboto", sans-serif;
   font-size: 45px;
-  color: orange;
+  color: #2563EB;
 }
 
