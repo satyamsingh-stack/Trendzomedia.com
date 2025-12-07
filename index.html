@@ -154,13 +154,14 @@
         <div class="container">
             <div class="row">
                 <h2 class="text-center w-100 service-heading poppins-bold">We offer a full range of
-                    <span class="highlight">digital services</span> </h2>
+                    <span class="highlight">digital services</span> 
+                </h2>
             </div>
         </div>
 
         <div class="container text-center mt-5">
             <div class="row mx-auto my-auto">
-                <div id="myCarousel" class="modern-slider">
+                <div id="servicesCarousel" class="modern-slider">
                     <div class="ms-track">
                         <div class="ms-slide active">
                             <div class="card service-card modern-card">
@@ -224,20 +225,22 @@
       <section class=" section-padding">
         <div class="container">
             <div class="row">
-                <h2 class="text-center w-100 service-heading">Testimonial
-                    <!-- <span class="highlight">digital services</span> </h2> -->
+                <!-- <h2 class="text-center w-100 service-heading poppins-bold">Clients’ Love To Work With Us -->
+                <h2 class="text-center w-100 service-heading poppins-bold">Clients’ Love To Work
+                    <span class="highlight">With Us</span> 
+                </h2>
             </div>
         </div>
 
         <div class="container text-center mt-5">
             <div class="row mx-auto my-auto">
-                <div id="myCarousel" class="modern-slider">
+                <div id="testimonialCarousel" class="modern-slider">
                     <div class="ms-track">
                         <div class="ms-slide active">
                             <div class="card service-card modern-card">
                                 <img src="./asset/image/Samridhi.jpg" alt="Ugc Creation">
                                 <div class="card-body">
-                                    <h5>samiridhi</h5>
+                                    <h5>Samiridhi</h5>
                                     <p>Working with this team made everything easier. They understood my business goals, planned content around them, and executed without drama. Results were visible in a short time.</p>
                                 </div>
                             </div>
@@ -276,15 +279,6 @@
                                 <div class="card-body">
                                     <h5>Vidushi</h5>
                                     <p>The team handled our brand with clarity and intent. Designs got sharper, messaging got disciplined, and results started showing within weeks. They know what they’re doing.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ms-slide">
-                            <div class="card service-card modern-card">
-                                <img src="./asset/image/influencer.png" alt="Influence Marketing">
-                                <div class="card-body">
-                                    <h5>Influence Marketing</h5>
-                                    <p>Connect with the right influencers to boost brand trust and visibility.</p>
                                 </div>
                             </div>
                         </div>
@@ -434,8 +428,7 @@
     <script src="./asset/js/main.js"></script>
         <script>
         // Modern slider JS: simple, lightweight, autoplay with 3D feel
-        (function(){
-            const slider = document.querySelector('.modern-slider');
+        function initSlider(slider) {
             if(!slider) return;
             const track = slider.querySelector('.ms-track');
             const slides = Array.from(slider.querySelectorAll('.ms-slide'));
@@ -482,7 +475,13 @@
             resetTimer();
             // responsive adjust on resize
             window.addEventListener('resize', update);
-        })();
+        }
+
+        // Initialize all sliders
+        document.addEventListener('DOMContentLoaded', function() {
+            const sliders = document.querySelectorAll('.modern-slider');
+            sliders.forEach(slider => initSlider(slider));
+        });
         </script>
 </body>
 
