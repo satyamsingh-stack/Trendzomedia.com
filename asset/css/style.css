@@ -462,6 +462,44 @@ section.footer.section-padding {
   font-size: 40px;
   padding: 5px 10px;
 }
+/* New footer styling: simplified, clean and attractive */
+.footer-inner {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  align-items: center;
+}
+.footer-brand img {
+  max-height: 56px;
+}
+.footer-nav a {
+  margin: 0 10px;
+  color: #070a57;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-nav a:hover {
+  color: #2563EB;
+}
+.footer-contact .footer-email {
+  display: inline-block;
+  color: #2563EB;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.footer-contact i {
+  color: #2563EB;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .footer-inner {
+    text-align: center;
+  }
+  .footer-nav {
+    margin: 12px 0;
+  }
+}
 /* Contact Us Styling  */
 
 .contact-header {
