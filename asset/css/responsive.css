@@ -1,7 +1,43 @@
+/* ============================= */
+/* REMOVE WHITE RECTANGLE BEHIND HAMBURGER */
+/* ============================= */
+.navbar-toggler-icon {
+    background-image: none !important;   /* remove Bootstrap default icon */
+}
 
-/* Project Page  */
+/* Remove border, background, shadow */
+.navbar-toggler {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Show FontAwesome bars */
+.navbar-toggler i {
+    color: #070a57;
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* Optional: mobile collapse background transparent */
+.navbar-collapse.collapse {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* ============================= */
+/* YOUR ORIGINAL MEDIA QUERIES   */
+/* ============================= */
+
+/* Project Page */
 @media only screen and (max-width: 576px) {
-    
     .left-content h2{
         font-size: 45px;
     }
@@ -21,13 +57,15 @@
     .testimonial-description h3{
         font-size: 35px;
     }
-  }
-  @media only screen and (max-width: 1200px){
+}
+
+@media only screen and (max-width: 1200px){
     .coma{
         left: 0%;
     }
-  }
-  @media only screen and (max-width: 1200px){
+}
+
+@media only screen and (max-width: 1200px){
     a.carousel-control-prev.testimonial-control{
         top: 85%;
     }
@@ -35,54 +73,54 @@
         top: 85%;
         margin-left: 20px;
     }
-  }
-  @media only screen and (max-width: 767px){
+}
+
+/* Team Page */
+@media only screen and (max-width: 767px){
     .client-picture img{
-          max-height: 350px;
-      }
-      .client-picture img.coma{
-          top:55%;
-          left: 5%;
-      }
-  }
+        max-height: 350px;
+    }
+    .client-picture img.coma{
+        top:55%;
+        left: 5%;
+    }
+}
 
-
-  /* Team Page  */
-
-  @media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px){
     .achivement-item{
         margin-top: 45px;
     }
-  }
-  @media only screen and (max-width: 768px){
+}
+
+/* Blog Page */
+@media only screen and (max-width: 768px){
     .blog-container .row{
         margin-bottom: 40px;
     }
-  }
-  
-/* Contact Us Page  */
+}
 
-  @media only screen and (max-width: 768px){
+/* Contact Us Page */
+@media only screen and (max-width: 768px){
     .office-block{
         margin-bottom: 40px;
     }
-  }
-  
-  @media only screen and (max-width: 992px){
+}
+
+@media only screen and (max-width: 992px){
     .partner img{
         margin-bottom: 25px;
     }
-  }
-  @media only screen and (max-width: 768px){
+}
+
+@media only screen and (max-width: 768px){
     .partner img{
         margin-bottom: 35px;
     }
-  }
-  
-  /* Service Details Page  */
-  
-  @media only screen and (max-width:768px){
-	  .contact-header .right-content img{
-		  width:70% !important;
-	  }
-  }
+}
+
+/* Service Details Page */
+@media only screen and (max-width:768px){
+    .contact-header .right-content img{
+        width:70% !important;
+    }
+}
