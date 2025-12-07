@@ -975,6 +975,8 @@ section.header.contact-header {
 .card.service-block-card {
   min-height: 450px;
   margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 .why-choose img {
   margin-bottom: 25px;
