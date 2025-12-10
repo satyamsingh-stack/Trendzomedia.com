@@ -166,11 +166,13 @@ button.nav-button {
 }
 
 .process-block img {
-  background: #fbf5e5;
-  border: 2px dotted orange;
+  /* background: #fbf5e5; */
+  border: 2px dotted 64707d;
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 15px;
+  height:100px;
+  width:110px;
 }
 
 .process-block p {
@@ -203,7 +205,7 @@ button.nav-button {
 }
 
 .project-discussion button {
-  background: orange;
+  /* background: orange; */
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
