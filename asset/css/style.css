@@ -980,6 +980,36 @@ section.header.contact-header {
   margin-bottom: 20px;
   border-radius: 15px;
   overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card.service-block-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card.service-block-card img {
+  transition: transform 0.3s ease;
+}
+
+.card.service-block-card:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card.service-block-card {
+  animation: fadeInUp 0.6s ease-out;
 }
 .why-choose img {
   margin-bottom: 25px;
