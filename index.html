@@ -353,6 +353,117 @@
     </section>
     <!-- Partner End  -->
 
+    <!-- FAQ Section Start -->
+<section class="faq section-padding" style="background-color: #f9f9f9;">
+    <div class="container">
+        <h2 class="text-center poppins-bold" style="color: #2563EB; font-size: 45px; font-weight: 500; line-height: 1.2;">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3 class="faq-question" onclick="toggleAnswer(this)" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                What is Trendzo Media?
+                <span class="faq-indicator" style="font-size: 18px; color: #2563EB;">+</span>
+            </h3>
+            <p class="faq-answer" style="display: none;">Trendzo Media is a digital marketing agency that helps brands grow online through social media marketing, content creation, video editing, branding, and performance-driven digital strategies.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" onclick="toggleAnswer(this)" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                What digital marketing services does Trendzo Media provide?
+                <span class="faq-indicator" style="font-size: 18px; color: #2563EB;">+</span>
+            </h3>
+            <p class="faq-answer" style="display: none;">Trendzo Media offers social media management, content strategy, video editing for reels and long-form content, graphic design, branding, paid advertising, and digital growth consulting.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" onclick="toggleAnswer(this)" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                Is Trendzo Media a full-service digital marketing agency?
+                <span class="faq-indicator" style="font-size: 18px; color: #2563EB;">+</span>
+            </h3>
+            <p class="faq-answer" style="display: none;">Yes. Trendzo Media handles both strategy and execution, from planning content and campaigns to creating visuals, managing platforms, and optimizing performance.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" onclick="toggleAnswer(this)" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                Which platforms does Trendzo Media specialize in?
+                <span class="faq-indicator" style="font-size: 18px; color: #2563EB;">+</span>
+            </h3>
+            <p class="faq-answer" style="display: none;">We specialize in Instagram, YouTube, LinkedIn, X (Twitter), and other major social media platforms based on where your target audience is most active.</p>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question" onclick="toggleAnswer(this)" style="cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                Who can work with Trendzo Media?
+                <span class="faq-indicator" style="font-size: 18px; color: #2563EB;">+</span>
+            </h3>
+            <p class="faq-answer" style="display: none;">Trendzo Media works with startups, small businesses, personal brands, creators, and growing companies looking to build a strong digital presence and consistent online growth.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Adding toggle functionality and styling -->
+<script>
+function toggleAnswer(element) {
+    const answer = element.nextElementSibling;
+    const indicator = element.querySelector('.faq-indicator');
+    if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+        indicator.textContent = "-";
+    } else {
+        answer.style.display = "none";
+        indicator.textContent = "+";
+    }
+}
+</script>
+
+<style>
+.faq-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    font-family: "Roboto", sans-serif;
+    color: #070a57;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #2563EB;
+}
+
+.faq-answer {
+    font-family: "Roboto", sans-serif;
+    color: #64707d;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.faq h2 {
+    font-family: "Roboto", sans-serif;
+    color: #2563EB;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+</style>
+<!-- FAQ Section End -->
+
     <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/917014543733?text=Hi%20Trendzo%20Media%20👋%20I%20want%20to%20discuss%20a%20project"
    class="whatsapp-float"
